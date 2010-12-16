@@ -22,7 +22,7 @@ OBJECTS=BamAlignment.o \
 		BGZF.o \
 		split.o
 
-all: bamquality
+all: bamquality fastqquality
 
 clean:
 	rm *.o
