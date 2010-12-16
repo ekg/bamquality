@@ -19,7 +19,8 @@ OBJECTS=BamAlignment.o \
 		BamReader.o \
 		BamIndex.o \
 		BamWriter.o \
-		BGZF.o
+		BGZF.o \
+		split.o
 
 all: bamquality
 
@@ -31,4 +32,5 @@ clean:
 bamquality: bamquality.cpp $(OBJECTS)
 	$(LDENV) $(CXX) $(CXXFLAGS) bamquality.cpp -o $@ $(OBJECTS) $(LDFLAGS) $(LIBS)
 
-
+fastqquality: fastqquality.cpp
+	$(LDENV) $(CXX) $(CXXFLAGS) fastqquality.cpp -o $@
