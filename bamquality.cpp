@@ -96,7 +96,7 @@ int main(int argc, char** argv) {
         }
     }
 
-    cout << "# phred33\ttotal";
+    cout << "phred33\ttotal";
     for (map<string, string>::iterator r = readGroupToSampleName.begin(); r != readGroupToSampleName.end(); ++r) {
         cout << "\t" << r->first;
     }
