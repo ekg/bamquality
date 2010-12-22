@@ -41,7 +41,7 @@ int main(int argc, char** argv) {
         }
     }
 
-    cout << "# phred33\ttotal" << endl;
+    cout << "phred33\ttotal" << endl;
 
     for (map<int, long unsigned int>::iterator i = qualities.begin(); i != qualities.end(); ++i) {
         int qual = i->first;
